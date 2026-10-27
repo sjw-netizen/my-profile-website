@@ -1,0 +1,7 @@
+node_modules/
+.vercel/
+.DS_Store
+Thumbs.db
+
+# 원본 Stitch 내보내기 압축 파일 (stitch-export/와 중복)
+*.zip

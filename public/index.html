@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>이민준 | Portfolio</title>
+  <meta name="description" content="Product Designer & Frontend Developer 이민준의 포트폴리오">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner container">
+      <a class="brand" href="#home" data-nav>
+        <span class="brand__mark" aria-hidden="true">M</span>
+        <span class="brand__text">Portfolio</span>
+      </a>
+
+      <!-- Desktop menu -->
+      <nav class="top-nav" aria-label="주 메뉴">
+        <a href="#home" data-nav data-section="home">Home</a>
+        <a href="#about" data-nav data-section="about">About</a>
+        <a href="#projects" data-nav data-section="projects">Projects</a>
+        <a href="#contact" data-nav data-section="contact">Contact</a>
+      </nav>
+
+      <div class="header__right">
+        <span class="header__current" id="current-section">Home</span>
+        <a class="header__avatar" href="#contact" data-nav aria-label="연락처로 이동">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIPKSwNqsVPpjKSgyMuM4oKvDiH5obF8BqamsZrozTzMqa_ovDsvu1YxrtB77quMHpiEZVmU5GQA0t6LLX1VNg6ez_nUTUz95EXjdHGEGxODVtpYQ41sIOgm_nwYswOvjPQ5Ijv2QSBjnDa9VuciG8csxmwWaA231F8Ebn4dSg9QHvs-Oh0xhfDiEQww3D7DYbnblxFFVFXBn5fI1rql87XRzBjPWXdZOnxPyt5jq_g5a21Q0u21FZlzZD2m6qjJ4NdA4" alt="프로필 사진">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="material-symbols-outlined">check_circle</span>
+    <span id="toast-message">이메일 주소가 복사되었습니다</span>
+  </div>
+
+  <main>
+    <!-- Hero (#home) -->
+    <section class="section hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__avatar">
+          <div class="hero__glow" aria-hidden="true"></div>
+          <div class="hero__photo">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIPKSwNqsVPpjKSgyMuM4oKvDiH5obF8BqamsZrozTzMqa_ovDsvu1YxrtB77quMHpiEZVmU5GQA0t6LLX1VNg6ez_nUTUz95EXjdHGEGxODVtpYQ41sIOgm_nwYswOvjPQ5Ijv2QSBjnDa9VuciG8csxmwWaA231F8Ebn4dSg9QHvs-Oh0xhfDiEQww3D7DYbnblxFFVFXBn5fI1rql87XRzBjPWXdZOnxPyt5jq_g5a21Q0u21FZlzZD2m6qjJ4NdA4" alt="이민준 프로필 사진">
+          </div>
+          <div class="hero__badge" aria-hidden="true">
+            <span class="material-symbols-outlined">draw</span>
+          </div>
+        </div>
+
+        <div class="status-pill">
+          <span class="dot dot--pulse"></span>
+          <span>프로젝트 협업 가능 <span class="muted">(Available for work)</span></span>
+        </div>
+
+        <h1 class="hero__title">
+          이민준
+          <span class="hero__title-en">Minjun Lee</span>
+        </h1>
+        <p class="hero__role">Product Designer &amp; Frontend Developer</p>
+        <p class="hero__bio">사용자 경험과 기술의 경계를 잇는 직관적이고 세련된 디지털 프로덕트를 디자인하고 만듭니다.</p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects" data-nav>
+            <span>프로젝트 보기</span>
+            <span class="material-symbols-outlined">arrow_downward</span>
+          </a>
+          <a class="btn btn--secondary" href="#contact" data-nav>
+            <span>연락하기</span>
+            <span class="material-symbols-outlined">send</span>
+          </a>
+        </div>
+
+        <div class="stats">
+          <div class="stats__item">
+            <span class="stats__value">4+</span>
+            <span class="stats__label">경력 연수</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__value">18+</span>
+            <span class="stats__label">출시 프로젝트</span>
+          </div>
+          <div class="stats__item">
+            <span class="stats__value">100%</span>
+            <span class="stats__label">클라이언트 만족</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About (#about) -->
+    <section class="section section--tinted" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow"><span class="material-symbols-outlined">person</span>About Me</span>
+          <h2>전문성과 관심 분야</h2>
+          <p>디자인 감각과 공학적 사고방식을 융합하여 실용적인 가치를 설계합니다.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Education -->
+          <div class="card">
+            <div class="card__label">
+              <span class="icon-box"><span class="material-symbols-outlined">school</span></span>
+              <span>학력 및 전공</span>
+            </div>
+            <div>
+              <h3 class="card__title">컴퓨터공학 &amp; 인터랙션 디자인 복수전공</h3>
+              <p class="card__sub">B.S. in Computer Science &amp; Interaction Design</p>
+            </div>
+            <p class="note">인간-컴퓨터 상호작용(HCI) 기초와 알고리즘 기반 시스템 아키텍처를 학습하며 인터랙션의 미학과 구현성 사이의 최적 균형점을 연마했습니다.</p>
+          </div>
+
+          <!-- Experience -->
+          <div class="card card--span">
+            <div class="card__label">
+              <span class="icon-box"><span class="material-symbols-outlined">work_history</span></span>
+              <span>경력 사항</span>
+            </div>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <div class="timeline__head">
+                  <h4>Senior Product Designer</h4>
+                  <span class="chip-date">2022 - 현재</span>
+                </div>
+                <span class="timeline__org">Nexus Studio</span>
+                <p>전사 모바일 앱 통합 디자인 시스템 구축을 총괄하고, 컴포넌트 재사용률 65% 향상 및 전환 중심 핵심 UX 플로우를 재설계했습니다.</p>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__head">
+                  <h4>UI/UX Developer</h4>
+                  <span class="chip-date">2020 - 2022</span>
+                </div>
+                <span class="timeline__org">TechFlow</span>
+                <p>SaaS 웹 애플리케이션 프론트엔드 모듈 개발 및 디자인 리드로 참여하여 인터랙티브 대시보드와 접근성 준수 UI 프레임워크를 개발했습니다.</p>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Interests -->
+          <div class="card">
+            <div class="card__label">
+              <span class="icon-box"><span class="material-symbols-outlined">interests</span></span>
+              <span>주요 관심 분야</span>
+            </div>
+            <div class="interests">
+              <span class="interest"><span class="material-symbols-outlined">layers</span>디자인 시스템</span>
+              <span class="interest"><span class="material-symbols-outlined">animation</span>인터랙션 &amp; 모션</span>
+              <span class="interest"><span class="material-symbols-outlined">phone_iphone</span>모바일 UX</span>
+              <span class="interest"><span class="material-symbols-outlined">accessibility_new</span>웹 접근성</span>
+              <span class="interest"><span class="material-symbols-outlined">neurology</span>AI 인터페이스</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects (#projects) -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow"><span class="material-symbols-outlined">space_dashboard</span>Projects</span>
+          <h2>주요 프로젝트</h2>
+          <p>직접 기획, 디자인, 구현한 대표 작업물입니다. 카드를 누르면 관련 페이지로 이동합니다.</p>
+        </div>
+
+        <div class="project-grid">
+          <!-- 링크는 예시 주소입니다. data-href를 실제 프로젝트 주소로 바꿔 주세요. -->
+          <article class="project" data-href="https://github.com/minjun-dev/finflow" tabindex="0" role="link" aria-label="FinFlow 프로젝트 보기 (새 창)">
+            <div class="project__media">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-PcdZbbKpuXE3KjtnYs2fY6YSuD2LiUBlUwxo1eNFsAJ4Q7010HuZoJX-z2j9BfcBP3S2hj_auNvJ8JSfhLICcJerYy_5NtRp7A5-m1BhNjnf1Ychc6HMTuFRVFoHLnn8vG__dvsWU4RSbByeODWR88MFIDXOjnGTKYrM-U3krjOQdn5wt2hBj4lMUl30n6pY1WPk3onJUod2gGFQjbalT5zFKAPMLyMP8tlUl5AxKhSz3Lzgx1Dn4w" alt="FinFlow 모바일 자산관리 앱 화면" loading="lazy">
+              <span class="project__case">Case Study 01</span>
+            </div>
+            <div class="project__body">
+              <div class="tags">
+                <span class="tag tag--accent">Fintech</span>
+                <span class="tag">Mobile UX</span>
+                <span class="tag">Design System</span>
+              </div>
+              <div>
+                <h3 class="project__title">FinFlow</h3>
+                <p class="project__subtitle">지능형 자산관리 모바일 앱</p>
+              </div>
+              <p class="project__desc">개인 맞춤형 자산 분석과 직관적인 데이터 시각화로 주간 활성 사용자(WAU) 45% 증가 견인. 복잡한 금융 수치를 미려한 인터랙션으로 해소했습니다.</p>
+              <div class="project__foot">
+                <span class="project__more">자세히 보기<span class="material-symbols-outlined">arrow_forward</span></span>
+                <span class="material-symbols-outlined project__icon">insights</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-href="https://github.com/minjun-dev/lumina" tabindex="0" role="link" aria-label="Lumina 프로젝트 보기 (새 창)">
+            <div class="project__media">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4osHnjp7_7KOSYtnJAZnbJiEQ06qdUMcckwRxUWDDLbNQHjIw_VFHgVHq1hNhLsVtfyZODgi7fwCI3pEynKyMHiAMbjpN-OzX0g6EVu9uohQfTq2ypKv4GepMU4OMe6UX__9s_tiajR0HbP4zzKJ_qze_1q97udYnAqThTA7h1njifwine-6GpcSs6x9OOnBSPXMrl9-LxmqoaeZSKm1X7APqQE_B8DQPtfMidDhPIPF-00-FkEaL6g" alt="Lumina 협업 플랫폼 화면" loading="lazy">
+              <span class="project__case">Case Study 02</span>
+            </div>
+            <div class="project__body">
+              <div class="tags">
+                <span class="tag tag--accent">SaaS</span>
+                <span class="tag">Web App</span>
+                <span class="tag">Frontend</span>
+              </div>
+              <div>
+                <h3 class="project__title">Lumina</h3>
+                <p class="project__subtitle">크리에이터 협업 플랫폼</p>
+              </div>
+              <p class="project__desc">디자이너와 엔지니어 간의 실시간 피드백 루프를 지원하는 클라우드 워크스페이스 구축. 지연 시간 120ms 미만의 캔버스 엔진 연동 구현.</p>
+              <div class="project__foot">
+                <span class="project__more">자세히 보기<span class="material-symbols-outlined">arrow_forward</span></span>
+                <span class="material-symbols-outlined project__icon">hub</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-href="https://github.com/minjun-dev/pulse-health" tabindex="0" role="link" aria-label="Pulse Health 프로젝트 보기 (새 창)">
+            <div class="project__media">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIez6TnnKcelx9dJ6l1rkRi2mU9YSffDkW8xlghHoRmGOCote7DCvvlDOC9Nn51hEEJ4sZIfGVENGdUj99tX_Is9p6uAKYyCZ4cCeLztagXrzgBINjZVc3mrfKF0D5Ki4c-3S_X2Vjw0cysdOga4LpbLyMVLl9pr4yKMRwpkBRH53Z2ouq72Xg_ZG98gbkxqmRDTScgDr6vfDgX0ocSIPAdP8DgdFZLKUVyz2iJa0V1Bp-pK-IJRyAdw" alt="Pulse Health 웰니스 트래커 화면" loading="lazy">
+              <span class="project__case">Case Study 03</span>
+            </div>
+            <div class="project__body">
+              <div class="tags">
+                <span class="tag tag--accent">Healthcare</span>
+                <span class="tag">IoT</span>
+                <span class="tag">UI Design</span>
+              </div>
+              <div>
+                <h3 class="project__title">Pulse Health</h3>
+                <p class="project__subtitle">스마트 웰니스 트래커</p>
+              </div>
+              <p class="project__desc">생체 데이터 기반의 일일 라이프스타일 코칭 인터페이스 및 부드러운 햅틱 연동 모션 인터랙션을 설계하여 유저 리텐션을 32% 개선했습니다.</p>
+              <div class="project__foot">
+                <span class="project__more">자세히 보기<span class="material-symbols-outlined">arrow_forward</span></span>
+                <span class="material-symbols-outlined project__icon">ecg_heart</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (#contact) -->
+    <section class="section section--tinted" id="contact">
+      <div class="container contact">
+        <div class="section-head">
+          <span class="eyebrow"><span class="material-symbols-outlined">mail</span>Get In Touch</span>
+          <h2>함께 일해볼까요?</h2>
+          <p>새로운 프로젝트 제안, 협업 문의, 커피챗 모두 언제나 환영합니다.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card card--raised">
+            <div class="email-head">
+              <span class="card__eyebrow">Direct Email</span>
+              <span class="reply"><span class="dot"></span>보통 24시간 내 회신</span>
+            </div>
+            <div class="email-box">
+              <a class="email-link" id="email-link" href="mailto:minjun.design@example.com?subject=%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%ED%98%91%EC%97%85%20%EB%AC%B8%EC%9D%98">
+                <span class="material-symbols-outlined">edit_square</span>
+                <span class="email-link__text">minjun.design@example.com</span>
+              </a>
+              <button class="icon-btn" id="copy-email-btn" type="button" data-email="minjun.design@example.com" aria-label="이메일 주소 복사">
+                <span class="material-symbols-outlined">content_copy</span>
+              </button>
+            </div>
+            <p class="caption">주소를 누르면 메일 작성창이 열리고, 오른쪽 버튼을 누르면 클립보드에 복사됩니다.</p>
+          </div>
+
+          <div class="social">
+            <span class="social__label">Social &amp; Profiles</span>
+            <div class="social__grid">
+              <a class="social__item" href="https://github.com/minjun-dev" target="_blank" rel="noopener noreferrer">
+                <span class="icon-box icon-box--neutral"><span class="material-symbols-outlined">code</span></span>
+                <span class="social__text"><strong>GitHub</strong><small>@minjun-dev</small></span>
+              </a>
+              <a class="social__item" href="https://www.linkedin.com/in/minjun-design" target="_blank" rel="noopener noreferrer">
+                <span class="icon-box icon-box--accent"><span class="material-symbols-outlined">badge</span></span>
+                <span class="social__text"><strong>LinkedIn</strong><small>minjun-design</small></span>
+              </a>
+              <a class="social__item" href="https://dribbble.com/minjun-design" target="_blank" rel="noopener noreferrer">
+                <span class="icon-box"><span class="material-symbols-outlined">palette</span></span>
+                <span class="social__text"><strong>Dribbble</strong><small>Shot Portfolio</small></span>
+              </a>
+              <a class="social__item" href="https://x.com/minjun_ux" target="_blank" rel="noopener noreferrer">
+                <span class="icon-box icon-box--neutral"><span class="material-symbols-outlined">alternate_email</span></span>
+                <span class="social__text"><strong>X (Twitter)</strong><small>@minjun_ux</small></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <span class="footer__heart"><span class="material-symbols-outlined">favorite</span></span>
+          <p>"복잡성을 단순함으로 바꾸는 모든 순간을 즐깁니다."</p>
+          <small>© <span id="year">2026</span> Minjun Lee. Crafted with precision &amp; care.</small>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile bottom tab bar -->
+  <nav class="tab-bar" aria-label="하단 메뉴">
+    <a href="#home" data-nav data-section="home"><span class="material-symbols-outlined">cottage</span><span>Home</span></a>
+    <a href="#about" data-nav data-section="about"><span class="material-symbols-outlined">badge</span><span>About</span></a>
+    <a href="#projects" data-nav data-section="projects"><span class="material-symbols-outlined">space_dashboard</span><span>Projects</span></a>
+    <a href="#contact" data-nav data-section="contact"><span class="material-symbols-outlined">mail</span><span>Contact</span></a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
